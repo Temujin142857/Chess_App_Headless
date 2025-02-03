@@ -8,15 +8,13 @@ import java.io.IOException;
 public class Player {
      //sets the basics attributes of a player like color, and handles all actions made by a player
     private char colour;
-    private GUI gui;
 
     /**
      * Constructor
      * @param colour the colour which this player will be using
      */
-    public Player(char colour, GUI gui){
+    public Player(char colour){
         this.colour=colour;
-        this.gui=gui;
     }
 
     /**
@@ -76,6 +74,5 @@ public class Player {
     public char getColour() {
         return colour;
     }
-    public GUI getGui(){return gui;}
 
 }

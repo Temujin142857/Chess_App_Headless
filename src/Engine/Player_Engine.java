@@ -6,7 +6,6 @@ import Chess_Board.Chess_Set.Pieces_Classes.Piece;
 import Chess_Board.Player;
 import Engine.MachineLearning.Evaluator;
 import Chess_Board.Chess_Set.Board;
-import Chess_Board.GUI;
 
 
 import java.util.ArrayList;
@@ -23,8 +22,8 @@ public class Player_Engine extends Player{
      * Constructor
      * @param colour the colour which this player will be using
      */
-    public Player_Engine(char colour,GUI gui,int depth) {
-        super(colour,gui);
+    public Player_Engine(char colour,int depth) {
+        super(colour);
         evaluator=new Evaluator();
         this.depth=depth;
     }
@@ -32,11 +31,10 @@ public class Player_Engine extends Player{
     /**
      * might be useful if I get machine learning operational
      * @param colour
-     * @param gui
      * @param evaluator
      */
-    public Player_Engine(char colour, GUI gui, Evaluator evaluator){
-        super(colour,gui);
+    public Player_Engine(char colour, Evaluator evaluator){
+        super(colour);
         this.evaluator=evaluator;
     }
 

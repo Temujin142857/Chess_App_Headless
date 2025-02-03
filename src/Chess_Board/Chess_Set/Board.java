@@ -466,5 +466,9 @@ public class Board { //represents the game board
         return (at(location1).getName().charAt(1)=='P' && !at(location2).getName().equals("EMPTY"))||isEnPassant(location1,location2);
     }
 
+    public String toString(){
+        return "";
+    }
+
 
 }

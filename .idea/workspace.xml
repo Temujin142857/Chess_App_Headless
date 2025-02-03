@@ -10,21 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ab48c41-58c3-4728-acd1-440da9d1c15a" name="Changes" comment="did a ton of modification&#10;Plan A is now to not use machine learning&#10;ready to start debugging&#10;modified and corrected the can move methods of the pieces&#10;added a canmove method to the board&#10;set up the minimax traversal&#10;set up the evaluation function&#10;set up the controller method for those&#10;working on debugging via the controller method&#10;then will add the alpha beta component">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chess_Board" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess_Board" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chess_Board/Chess_Set/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess_Board/Chess_Set/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chess_Board/Chess_Set/NoKingException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chess_Board/Chess_Set/Pieces_Classes/BPawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess_Board/Chess_Set/Pieces_Classes/BPawn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chess_Board/Chess_Set/Pieces_Classes/Bishop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess_Board/Chess_Set/Pieces_Classes/Bishop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chess_Board/Chess_Set/Pieces_Classes/EMPTY.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess_Board/Chess_Set/Pieces_Classes/EMPTY.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chess_Board/Chess_Set/Pieces_Classes/King.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess_Board/Chess_Set/Pieces_Classes/King.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chess_Board/Chess_Set/Pieces_Classes/Knight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess_Board/Chess_Set/Pieces_Classes/Knight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chess_Board/Chess_Set/Pieces_Classes/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess_Board/Chess_Set/Pieces_Classes/Piece.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chess_Board/Chess_Set/Pieces_Classes/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess_Board/Chess_Set/Pieces_Classes/Queen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chess_Board/Chess_Set/Pieces_Classes/Rook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess_Board/Chess_Set/Pieces_Classes/Rook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chess_Board/Chess_Set/Pieces_Classes/WPawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess_Board/Chess_Set/Pieces_Classes/WPawn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chess_Board/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess_Board/GUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chess_Board/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess_Board/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Engine/Player_Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Engine/Player_Engine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +31,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/src/Chess_Board" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -64,25 +53,29 @@
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
   <component name="ProjectId" id="2PUckGRX85qtpYmGG4mUsuPiVfl" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="Downloaded.Files.Path.Enabled" value="false" />
-    <property name="Repository.Attach.Annotations" value="false" />
-    <property name="Repository.Attach.JavaDocs" value="false" />
-    <property name="Repository.Attach.Sources" value="false" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/Tomio/Programming/Chess/Chess_App_Headless",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Temuj\Programming\Java\Chess_Engine\src" />
@@ -114,6 +107,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1683515242761</updated>
+      <workItem from="1738554498306" duration="4224000" />
     </task>
     <task id="LOCAL-00001" summary="tesint">
       <created>1683515278026</created>
@@ -166,6 +160,9 @@
     </task>
     <option name="localTasksCounter" value="8" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
