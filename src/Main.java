@@ -10,7 +10,11 @@ import java.util.regex.Pattern;
 public class Main { //main for the project, work in progress; play not finish.
 
     public static void main(String[] args) {
-        play(true, args[0].equals("true"));
+        boolean playerIsWhite=true;
+        if(args.length>0){
+            playerIsWhite=args[0].equals("true");
+        }
+        play(true, playerIsWhite);
         //dataTest();
         //translatePGN("master_games.pgn","datafile");
         /**
@@ -37,7 +41,7 @@ public class Main { //main for the project, work in progress; play not finish.
                 if(HInterface.ready()==true){
                     System.out.println("ready");
                 }
-            } else if (signal.contains("coordinates")) {
+            } else if (signal.contains("coordinate")) {
                 String temp=signal.split(":")[1];
                 String[] temp2 =temp.split(",");
                 int x=Integer.parseInt(temp2[0]);
