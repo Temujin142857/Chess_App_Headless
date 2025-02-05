@@ -51,15 +51,19 @@
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
+<<<<<<< HEAD
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
+=======
+>>>>>>> 8bfe10a74d552b8fa42c7c0c92e5017a294a887c
   <component name="ProjectId" id="2PUckGRX85qtpYmGG4mUsuPiVfl" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
@@ -75,6 +79,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+=======
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+>>>>>>> 8bfe10a74d552b8fa42c7c0c92e5017a294a887c
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Temuj\Programming\Java\Chess_Engine\src" />
