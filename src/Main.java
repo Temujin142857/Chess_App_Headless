@@ -42,6 +42,7 @@ public class Main { //main for the project, work in progress; play not finish.
                 String[] temp2 =temp.split(",");
                 int x=Integer.parseInt(temp2[0]);
                 int y=Integer.parseInt(temp2[1]);
+                HInterface.squareClicked(x,y);
             } else if (signal.contains("reset")) {
                 break;
             }
