@@ -1,16 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Chess_Engine:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dacf35ef-9e97-4e39-864f-0f0fb7f86370" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+    <list default="true" id="61e0802a-584e-43d5-8cb6-a95195a567d2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Chess_Engine_jar/Chess_Engine.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Chess_Engine_jar/Chess_Engine.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Chess_Engine_jar/Pieces_Images/BBishop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Chess_Engine_jar/Pieces_Images/BKing.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Chess_Engine_jar/Pieces_Images/BKnight.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Chess_Engine_jar/Pieces_Images/BPawn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Chess_Engine_jar/Pieces_Images/BQueen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Chess_Engine_jar/Pieces_Images/BRook.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Chess_Engine_jar/Pieces_Images/WBishop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Chess_Engine_jar/Pieces_Images/WKing.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Chess_Engine_jar/Pieces_Images/WKnight.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Chess_Engine_jar/Pieces_Images/WPawn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Chess_Engine_jar/Pieces_Images/WQueen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Chess_Engine_jar/Pieces_Images/WRook.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Chess_Engine/Chess_Board/Chess_Set/Board$PieceIterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess_Engine/Chess_Board/Chess_Set/Board$PieceIterator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Chess_Engine/Chess_Board/Chess_Set/Board.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess_Engine/Chess_Board/Chess_Set/Board.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Chess_Engine/Chess_Board/Chess_Set/NotAPawnException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess_Engine/Chess_Board/Chess_Set/NotAPawnException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Chess_Engine/Chess_Board/Chess_Set/Pieces_Classes/BPawn.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess_Engine/Chess_Board/Chess_Set/Pieces_Classes/BPawn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Chess_Engine/Chess_Board/Chess_Set/Pieces_Classes/Bishop.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess_Engine/Chess_Board/Chess_Set/Pieces_Classes/Bishop.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Chess_Engine/Chess_Board/Chess_Set/Pieces_Classes/EMPTY.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess_Engine/Chess_Board/Chess_Set/Pieces_Classes/EMPTY.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Chess_Engine/Chess_Board/Chess_Set/Pieces_Classes/King.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess_Engine/Chess_Board/Chess_Set/Pieces_Classes/King.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Chess_Engine/Chess_Board/Chess_Set/Pieces_Classes/Knight.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess_Engine/Chess_Board/Chess_Set/Pieces_Classes/Knight.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Chess_Engine/Chess_Board/Chess_Set/Pieces_Classes/Piece.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess_Engine/Chess_Board/Chess_Set/Pieces_Classes/Piece.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Chess_Engine/Chess_Board/Chess_Set/Pieces_Classes/Queen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess_Engine/Chess_Board/Chess_Set/Pieces_Classes/Queen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Chess_Engine/Chess_Board/Chess_Set/Pieces_Classes/Rook.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess_Engine/Chess_Board/Chess_Set/Pieces_Classes/Rook.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Chess_Engine/Chess_Board/Chess_Set/Pieces_Classes/WPawn.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess_Engine/Chess_Board/Chess_Set/Pieces_Classes/WPawn.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Chess_Engine/Chess_Board/HeadlessInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess_Engine/Chess_Board/HeadlessInterface.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Chess_Engine/Chess_Board/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess_Engine/Chess_Board/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Chess_Engine/DatabaseHandler/Streamer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess_Engine/DatabaseHandler/Streamer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Chess_Engine/DatabaseHandler/Writer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess_Engine/DatabaseHandler/Writer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Chess_Engine/Engine/AlphaBeta.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess_Engine/Engine/AlphaBeta.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Chess_Engine/Engine/MachineLearning/DataMaker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess_Engine/Engine/MachineLearning/DataMaker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Chess_Engine/Engine/MachineLearning/Evaluation_Machine_Learning_Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess_Engine/Engine/MachineLearning/Evaluation_Machine_Learning_Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Chess_Engine/Engine/MachineLearning/Evaluator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess_Engine/Engine/MachineLearning/Evaluator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Chess_Engine/Engine/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess_Engine/Engine/Node.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Chess_Engine/Engine/Player_Engine$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess_Engine/Engine/Player_Engine$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Chess_Engine/Engine/Player_Engine.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess_Engine/Engine/Player_Engine.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Chess_Engine/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess_Engine/Main.class" afterDir="false" />
@@ -20,6 +56,20 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": -1
+}]]></component>
+  <component name="ProjectId" id="2seFukUtIdnS9TzAomphCqoAA8b" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -31,40 +81,49 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propCompiler",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Chess_Engine" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Main" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="dacf35ef-9e97-4e39-864f-0f0fb7f86370" name="Changes" comment="" />
-      <created>1738806350192</created>
+      <changelist id="61e0802a-584e-43d5-8cb6-a95195a567d2" name="Changes" comment="" />
+      <created>1738808359672</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1738806350192</updated>
-      <workItem from="1738806352905" duration="735000" />
+      <updated>1738808359672</updated>
+      <workItem from="1738808360908" duration="3234000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

@@ -77,11 +77,6 @@ public class HeadlessInterface {
                     System.out.println("finished");
                     return;
                 }
-                if (black_cpu) {
-                    int[][] move = engine.getNextMove(board);
-                    pieceHeld = move[0];
-                    black_move(move[1][0], move[1][1]);
-                }
             }
         }
         else {
@@ -94,11 +89,7 @@ public class HeadlessInterface {
                     System.out.println("finished");
                     return;
                 }
-                if(white_cpu) {
-                    int[][] move = engine.getNextMove(board);
-                    pieceHeld = move[0];
-                    white_move(move[1][0], move[1][1]);
-                }
+
             }
         }
 
@@ -162,6 +153,17 @@ public class HeadlessInterface {
 
     private void endGame(String winner){
 
+    }
+    private void getCPUMove(){
+        if(white_cpu) {
+            int[][] move = engine.getNextMove(board);
+            pieceHeld = move[0];
+            white_move(move[1][0], move[1][1]);
+        }else if (black_cpu) {
+            int[][] move = engine.getNextMove(board);
+            pieceHeld = move[0];
+            black_move(move[1][0], move[1][1]);
+        }
     }
 
     private void activatePromotion(){
