@@ -110,6 +110,7 @@ public class HeadlessInterface {
         int moveResult = Wplayer.move(board, pieceHeld,new int[]{x,y});
         if(moveResult>0){//move is legal
             isPieceHeld=false;white_active=false;
+            sendMove();
             if (board.isCheckmate(board.findKing('B'))){
                 for (int i=0;i<8;i++) {
                     for (int j = 0; j < 8; j++) {
@@ -122,7 +123,7 @@ public class HeadlessInterface {
 
         }
         else{
-            System.out.println("illegal move, line 223, move was "+pieceHeld[0]+","+pieceHeld[1]+" to "+x+","+y);
+            System.out.println("illegal move, move was "+pieceHeld[0]+","+pieceHeld[1]+" to "+x+","+y);
             return false;
         }
         return true;
@@ -133,7 +134,7 @@ public class HeadlessInterface {
         System.out.println(moveResult);
         if(moveResult>0){//move is legal
             isPieceHeld=false;white_active=true;
-
+            sendMove();
             if (board.isCheckmate(board.findKing('W'))){
                 for (int i=0;i<8;i++) {
                     for (int j = 0; j < 8; j++) {
@@ -145,22 +146,29 @@ public class HeadlessInterface {
             }
         }
         else{
-            System.out.println("illegal move, line 240, move was "+pieceHeld[0]+","+pieceHeld[1]+" to "+x+","+y);
+            System.out.println("illegal move, move was "+pieceHeld[0]+","+pieceHeld[1]+" to "+x+","+y);
             return false;
         }
         return true;
     }
 
-    private void sendMove(int x, int y){
-        System.out.println("move success;highlight:"+"board:"+board.toString());
-        System.out.println("illegal move;board:"+board.toString());
+    private void sendMove(){
+        System.out.println("move success;highlight:null"+";board:"+board.toString());
     }
 
     private void highlightSquare(){
-        System.out.println("highlight:"+pieceHeld[0]+","+pieceHeld[1]+";board:"+board.toString());
+        System.out.println("highlight:"+pieceHeld[0]+","+pieceHeld[1]);
     }
 
     private void endGame(String winner){
+
+    }
+
+    private void activatePromotion(){
+
+    }
+
+    private void confirmPromotion(){
 
     }
 
