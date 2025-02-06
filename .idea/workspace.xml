@@ -9,48 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61e0802a-584e-43d5-8cb6-a95195a567d2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Chess_Engine_jar/Chess_Engine.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Chess_Engine_jar/Chess_Engine.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Chess_Engine_jar/Pieces_Images/BBishop.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Chess_Engine_jar/Pieces_Images/BKing.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Chess_Engine_jar/Pieces_Images/BKnight.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Chess_Engine_jar/Pieces_Images/BPawn.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Chess_Engine_jar/Pieces_Images/BQueen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Chess_Engine_jar/Pieces_Images/BRook.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Chess_Engine_jar/Pieces_Images/WBishop.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Chess_Engine_jar/Pieces_Images/WKing.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Chess_Engine_jar/Pieces_Images/WKnight.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Chess_Engine_jar/Pieces_Images/WPawn.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Chess_Engine_jar/Pieces_Images/WQueen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Chess_Engine_jar/Pieces_Images/WRook.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chess_Engine/Chess_Board/Chess_Set/Board$PieceIterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess_Engine/Chess_Board/Chess_Set/Board$PieceIterator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chess_Engine/Chess_Board/Chess_Set/Board.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess_Engine/Chess_Board/Chess_Set/Board.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chess_Engine/Chess_Board/Chess_Set/NotAPawnException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess_Engine/Chess_Board/Chess_Set/NotAPawnException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chess_Engine/Chess_Board/Chess_Set/Pieces_Classes/BPawn.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess_Engine/Chess_Board/Chess_Set/Pieces_Classes/BPawn.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chess_Engine/Chess_Board/Chess_Set/Pieces_Classes/Bishop.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess_Engine/Chess_Board/Chess_Set/Pieces_Classes/Bishop.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chess_Engine/Chess_Board/Chess_Set/Pieces_Classes/EMPTY.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess_Engine/Chess_Board/Chess_Set/Pieces_Classes/EMPTY.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chess_Engine/Chess_Board/Chess_Set/Pieces_Classes/King.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess_Engine/Chess_Board/Chess_Set/Pieces_Classes/King.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chess_Engine/Chess_Board/Chess_Set/Pieces_Classes/Knight.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess_Engine/Chess_Board/Chess_Set/Pieces_Classes/Knight.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chess_Engine/Chess_Board/Chess_Set/Pieces_Classes/Piece.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess_Engine/Chess_Board/Chess_Set/Pieces_Classes/Piece.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chess_Engine/Chess_Board/Chess_Set/Pieces_Classes/Queen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess_Engine/Chess_Board/Chess_Set/Pieces_Classes/Queen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chess_Engine/Chess_Board/Chess_Set/Pieces_Classes/Rook.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess_Engine/Chess_Board/Chess_Set/Pieces_Classes/Rook.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chess_Engine/Chess_Board/Chess_Set/Pieces_Classes/WPawn.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess_Engine/Chess_Board/Chess_Set/Pieces_Classes/WPawn.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chess_Engine/Chess_Board/HeadlessInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess_Engine/Chess_Board/HeadlessInterface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chess_Engine/Chess_Board/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess_Engine/Chess_Board/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chess_Engine/DatabaseHandler/Streamer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess_Engine/DatabaseHandler/Streamer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chess_Engine/DatabaseHandler/Writer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess_Engine/DatabaseHandler/Writer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chess_Engine/Engine/AlphaBeta.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess_Engine/Engine/AlphaBeta.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chess_Engine/Engine/MachineLearning/DataMaker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess_Engine/Engine/MachineLearning/DataMaker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chess_Engine/Engine/MachineLearning/Evaluation_Machine_Learning_Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess_Engine/Engine/MachineLearning/Evaluation_Machine_Learning_Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chess_Engine/Engine/MachineLearning/Evaluator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess_Engine/Engine/MachineLearning/Evaluator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chess_Engine/Engine/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess_Engine/Engine/Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chess_Engine/Engine/Player_Engine$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess_Engine/Engine/Player_Engine$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chess_Engine/Engine/Player_Engine.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess_Engine/Engine/Player_Engine.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chess_Engine/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess_Engine/Main.class" afterDir="false" />
-    </list>
+    <list default="true" id="61e0802a-584e-43d5-8cb6-a95195a567d2" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,7 +67,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738808359672</updated>
-      <workItem from="1738808360908" duration="3234000" />
+      <workItem from="1738808360908" duration="3431000" />
     </task>
     <servers />
   </component>

@@ -148,7 +148,7 @@ public class HeadlessInterface {
     }
 
     private void highlightSquare(){
-        System.out.println("highlight:"+pieceHeld[0]+","+pieceHeld[1]);
+        System.out.println("selection success;highlight:"+pieceHeld[0]+","+pieceHeld[1]);
     }
 
     private void endGame(String winner){
