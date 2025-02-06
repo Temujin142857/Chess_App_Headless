@@ -21,7 +21,7 @@ public class HeadlessInterface {
     private boolean black_cpu=false;
     private Player_Engine engine;
     private Player_Engine engine2;
-    private int depth;
+    private int depth=2;
 
     private boolean ready=false;
     public void play(Board board, boolean isCpuOpponent, boolean playerIsWhite) throws IOException {
@@ -74,7 +74,6 @@ public class HeadlessInterface {
             if (moved) {
                 if (board.at(new int[]{x, y}).getName().charAt(1) == 'P' && y == 7) {
                     //displayPromotionOptions(x, y);
-                    System.out.println("finished");
                     return;
                 }
             }
@@ -86,14 +85,11 @@ public class HeadlessInterface {
             if (moved) {
                 if (board.at(new int[]{x, y}).getName().charAt(1) == 'P' && y == 0) {
                     //displayPromotionOptions(x, y);
-                    System.out.println("finished");
                     return;
                 }
 
             }
         }
-
-        System.out.println("finished");
     }
 
 
@@ -154,7 +150,7 @@ public class HeadlessInterface {
     private void endGame(String winner){
 
     }
-    private void getCPUMove(){
+    public void getCPUMove(){
         if(white_cpu) {
             int[][] move = engine.getNextMove(board);
             pieceHeld = move[0];

@@ -37,17 +37,22 @@ public class Main { //main for the project, work in progress; play not finish.
         Scanner stdin = new Scanner(System.in);
         while(true){
             String signal=stdin.nextLine();
+            System.out.println("signal recieved: "+signal);
             if(signal.equals("engine ready?")){
                 if(HInterface.ready()){
                     System.out.println("ready");
                 }
-            } else if (signal.contains("coordinate")) {
+            } else if (signal.contains("coordinates")) {
                 String temp=signal.split(":")[1];
                 String[] temp2 =temp.split(",");
                 int x=Integer.parseInt(temp2[0]);
                 int y=Integer.parseInt(temp2[1]);
                 HInterface.squareClicked(x,y);
+            } else if(signal.contains("perform engine move")){
+                System.out.println("active");
+                HInterface.getCPUMove();
             } else if (signal.contains("reset")) {
+                System.out.println("broke");
                 break;
             }
         }
