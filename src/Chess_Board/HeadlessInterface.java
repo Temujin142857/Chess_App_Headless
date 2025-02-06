@@ -141,6 +141,7 @@ public class HeadlessInterface {
 
     private void sendMove(){
         System.out.println("move success;highlight:null"+";board:"+board.toString());
+        return;
     }
 
     private void highlightSquare(){

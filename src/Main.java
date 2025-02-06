@@ -36,6 +36,7 @@ public class Main { //main for the project, work in progress; play not finish.
         }
         Scanner stdin = new Scanner(System.in);
         while(true){
+            System.out.println("waiting for signal");
             String signal=stdin.nextLine();
             System.out.println("signal recieved: "+signal);
             if(signal.equals("engine ready?")){
@@ -48,6 +49,7 @@ public class Main { //main for the project, work in progress; play not finish.
                 int x=Integer.parseInt(temp2[0]);
                 int y=Integer.parseInt(temp2[1]);
                 HInterface.squareClicked(x,y);
+                System.out.println("returned to loop");
             } else if(signal.contains("perform engine move")){
                 System.out.println("active");
                 HInterface.getCPUMove();
