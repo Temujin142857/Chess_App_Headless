@@ -28,12 +28,7 @@ public class Main { //main for the project, work in progress; play not finish.
 
     //runs the game
     private static void play(boolean isCpuOpponent, boolean playerIsWhite){
-        HeadlessInterface HInterface= new HeadlessInterface();
-        try {
-            HInterface.play(new Board(), isCpuOpponent, playerIsWhite );
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+        HeadlessInterface HInterface=setupBoard(isCpuOpponent, playerIsWhite);
         Scanner stdin = new Scanner(System.in);
         while(true){
             String signal=stdin.nextLine();
@@ -51,15 +46,32 @@ public class Main { //main for the project, work in progress; play not finish.
             } else if(signal.contains("perform engine move")){
                 HInterface.getCPUMove();
             } else if (signal.contains("reset")) {
-                System.out.println("broke");
-                break;
+                if(signal.contains(";")){
+                    String[] data=signal.split(";");
+                    for (String info:data) {
+                        if(info.contains("isCpuOpponent")){
+                            isCpuOpponent=info.split(":")[1].equals("true");
+                        }else if (info.contains("playerIsWhite")){
+                            playerIsWhite=info.split(":")[1].equals("true");
+                        }
+                    }
+                }
+                HInterface=setupBoard(isCpuOpponent, playerIsWhite);
             }
         }
 
 
     }
 
-
+    private static HeadlessInterface setupBoard(boolean isCpuOpponent, boolean playerIsWhite){
+        HeadlessInterface HInterface= new HeadlessInterface();
+        try {
+            HInterface.play(new Board(), isCpuOpponent, playerIsWhite );
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        return HInterface;
+    }
 
     private static void translatePGN(String filename1, String filename2){
         Streamer streamer=new Streamer();
