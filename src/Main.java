@@ -57,6 +57,10 @@ public class Main { //main for the project, work in progress; play not finish.
                     }
                 }
                 HInterface=setupBoard(isCpuOpponent, playerIsWhite);
+                System.out.println("reset complete");
+            } else if (signal.contains("kill")){
+                System.out.println("program terminated");
+                break;
             }
         }
 
