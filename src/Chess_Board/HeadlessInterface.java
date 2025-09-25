@@ -154,6 +154,7 @@ public class HeadlessInterface {
     public void getCPUMove(){
         if(white_cpu) {
             int[][] move = engine.getNextMove(board);
+            System.out.println(move);
             pieceHeld = move[0];
             white_move(move[1][0], move[1][1]);
         }else if (black_cpu) {

@@ -1,34 +1,12 @@
 package Engine.MachineLearning;
 
 import Chess_Board.Chess_Set.Pieces_Classes.Piece;
-import net.sf.javaml.classification.Classifier;
-import net.sf.javaml.classification.KNearestNeighbors;
-import net.sf.javaml.core.Dataset;
-import net.sf.javaml.core.DenseInstance;
-import net.sf.javaml.core.Instance;
-import net.sf.javaml.tools.data.FileHandler;
 
 import java.io.File;
 import java.io.IOException;
 
 public class Evaluator {
 
-
-    public void train(){
-        Dataset data = null;
-        double[] values=new double[]{};
-        Instance instance = new DenseInstance(values);
-
-        try {
-            data = FileHandler.loadDataset(new File("datafile.csv"), 64, ",");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        /* Contruct a KNN classifier that uses 5 neighbors to make a
-         *decision. */
-        Classifier knn = new KNearestNeighbors(5);
-        knn.buildClassifier(data);
-    }
 
     public double calculate_strength(Piece[][] position) {
         double strength = 0;
