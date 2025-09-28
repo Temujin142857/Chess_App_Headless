@@ -10,8 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="61e0802a-584e-43d5-8cb6-a95195a567d2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Chess_Engine/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess_Engine/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,10 +28,10 @@
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2seFukUtIdnS9TzAomphCqoAA8b" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -75,7 +75,12 @@
       <workItem from="1738908126858" duration="10000" />
       <workItem from="1739467984849" duration="13000" />
       <workItem from="1739486381375" duration="4270000" />
-      <workItem from="1739501848290" duration="1674000" />
+      <workItem from="1739501848290" duration="2713000" />
+      <workItem from="1739507446006" duration="1110000" />
+      <workItem from="1739509645547" duration="190000" />
+      <workItem from="1749243592425" duration="15000" />
+      <workItem from="1750293647722" duration="3000" />
+      <workItem from="1752455278050" duration="11000" />
     </task>
     <servers />
   </component>

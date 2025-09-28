@@ -33,7 +33,7 @@ public class Main { //main for the project, work in progress; play not finish.
         while(true){
             String signal=stdin.nextLine();
             System.out.println("signal recieved: "+signal);
-            if(signal.equals("engine ready?")){
+            if(signal.contains("engine ready?")){
                 if(HInterface.ready()){
                     System.out.println("ready");
                 }
