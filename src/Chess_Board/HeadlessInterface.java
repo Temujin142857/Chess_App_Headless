@@ -2,9 +2,6 @@ package Chess_Board;
 
 import Chess_Board.Chess_Set.Board;
 import Engine.Player_Engine;
-
-import javax.swing.*;
-import java.awt.*;
 import java.io.IOException;
 
 public class HeadlessInterface {
@@ -22,6 +19,7 @@ public class HeadlessInterface {
     private Player_Engine engine;
     private Player_Engine engine2;
     private int depth=2;
+    private String id="";
 
     private boolean ready=false;
     public void play(Board board, boolean isCpuOpponent, boolean playerIsWhite) throws IOException {
@@ -49,7 +47,7 @@ public class HeadlessInterface {
                 pieceHeld=move[0];
                 black_move(move[1][0],move[1][1]);
             }
-            System.out.println("game over");
+            printMessage("game over");
             return;
         }
         else if(white_cpu){
@@ -69,7 +67,7 @@ public class HeadlessInterface {
         if (!isPieceHeld){isPieceHeld=true;pieceHeld=new int[]{x,y};highlightSquare();}
         else if (white_active){
             isPieceHeld = false;
-            System.out.println("Piece deselected");
+            printMessage("Piece deselected");
             boolean moved=white_move(x,y);
             if (moved) {
                 if (board.at(new int[]{x, y}).getName().charAt(1) == 'P' && y == 7) {
@@ -80,7 +78,7 @@ public class HeadlessInterface {
         }
         else {
             isPieceHeld = false;
-            System.out.println("Piece deselected");
+            printMessage("Piece deselected");
             boolean moved=black_move(x,y);
             if (moved) {
                 if (board.at(new int[]{x, y}).getName().charAt(1) == 'P' && y == 0) {
@@ -101,7 +99,7 @@ public class HeadlessInterface {
             if (board.isCheckmate(board.findKing('B'))){
                 for (int i=0;i<8;i++) {
                     for (int j = 0; j < 8; j++) {
-                        System.out.println("at: "+i+","+j+"there is: "+board.at(i,j).getName());
+                        printMessage("at: "+i+","+j+"there is: "+board.at(i,j).getName());
                     }
                 }
                 isCheckmate=true;
@@ -110,7 +108,7 @@ public class HeadlessInterface {
 
         }
         else{
-            System.out.println("illegal move, move was "+pieceHeld[0]+","+pieceHeld[1]+" to "+x+","+y);
+            printMessage("illegal move, move was "+pieceHeld[0]+","+pieceHeld[1]+" to "+x+","+y);
             return false;
         }
         return true;
@@ -118,14 +116,13 @@ public class HeadlessInterface {
 
     private boolean black_move(int x, int y){
         int moveResult = Bplayer.move(board, pieceHeld,new int[]{x,y});
-        System.out.println(moveResult);
         if(moveResult>0){//move is legal
             isPieceHeld=false;white_active=true;
             sendMove();
             if (board.isCheckmate(board.findKing('W'))){
                 for (int i=0;i<8;i++) {
                     for (int j = 0; j < 8; j++) {
-                        System.out.println("at: "+i+","+j+"there is: "+board.at(i,j).getName());
+                        printMessage("at: "+i+","+j+"there is: "+board.at(i,j).getName());
                     }
                 }
                 isCheckmate=true;
@@ -133,28 +130,28 @@ public class HeadlessInterface {
             }
         }
         else{
-            System.out.println("illegal move, move was "+pieceHeld[0]+","+pieceHeld[1]+" to "+x+","+y);
+            printMessage("illegal move, move was "+pieceHeld[0]+","+pieceHeld[1]+" to "+x+","+y);
             return false;
         }
         return true;
     }
 
     private void sendMove(){
-        System.out.println("move success;highlight:null"+";board:"+board.toString());
+        printMessage("move success;highlight:null"+";board:"+board.toString());
         return;
     }
 
     private void highlightSquare(){
-        System.out.println("selection success;highlight:"+pieceHeld[0]+","+pieceHeld[1]);
+        printMessage("selection success;highlight:"+pieceHeld[0]+","+pieceHeld[1]);
     }
 
     private void endGame(String winner){
-
+        printMessage("Checkmate! "+winner+" wins!");
     }
+
     public void getCPUMove(){
         if(white_cpu) {
             int[][] move = engine.getNextMove(board);
-            System.out.println(move);
             pieceHeld = move[0];
             white_move(move[1][0], move[1][1]);
         }else if (black_cpu) {
@@ -164,6 +161,11 @@ public class HeadlessInterface {
         }
     }
 
+    private void printMessage(String message){
+        System.out.println(message+"@"+id);
+    }
+
+
     private void activatePromotion(){
 
     }
@@ -172,7 +174,10 @@ public class HeadlessInterface {
 
     }
 
-    public boolean ready(){
+    public boolean ready(String idT){
+        id=idT;
         return ready&&!isCheckmate;
     }
+
+
 }

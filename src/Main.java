@@ -1,11 +1,8 @@
 import Chess_Board.Chess_Set.Board;
 import Chess_Board.HeadlessInterface;
 import DatabaseHandler.Streamer;
-import Engine.Player_Engine;
-
 import java.io.IOException;
 import java.util.Scanner;
-import java.util.regex.Pattern;
 
 public class Main { //main for the project, work in progress; play not finish.
 
@@ -30,12 +27,14 @@ public class Main { //main for the project, work in progress; play not finish.
     private static void play(boolean isCpuOpponent, boolean playerIsWhite){
         HeadlessInterface HInterface=setupBoard(isCpuOpponent, playerIsWhite);
         Scanner stdin = new Scanner(System.in);
+        String id="";
         while(true){
             String signal=stdin.nextLine();
             System.out.println("signal recieved: "+signal);
             if(signal.contains("engine ready?")){
-                if(HInterface.ready()){
-                    System.out.println("ready");
+                id=signal.split("@")[1];
+                if(HInterface.ready(id)){
+                    System.out.println("ready@"+id);
                 }
             } else if (signal.contains("coordinates")) {
                 String temp=signal.split(":")[1];
@@ -57,13 +56,13 @@ public class Main { //main for the project, work in progress; play not finish.
                     }
                 }
                 HInterface=setupBoard(isCpuOpponent, playerIsWhite);
-                System.out.println("reset complete");
+                System.out.println("reset complete@"+id);
             } else if (signal.contains("kill")){
-                System.out.println("program terminated");
+                System.out.println("program terminated@"+id);
                 break;
             }
         }
-
+        stdin.close();
 
     }
 
