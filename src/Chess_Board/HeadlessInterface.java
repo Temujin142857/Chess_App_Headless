@@ -146,6 +146,8 @@ public class HeadlessInterface {
     }
 
     private void endGame(String winner){
+        ready=false;
+        isCheckmate=true;
         printMessage("Checkmate! "+winner+" wins!");
     }
 

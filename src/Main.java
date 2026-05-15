@@ -37,13 +37,17 @@ public class Main { //main for the project, work in progress; play not finish.
                     System.out.println("ready@"+id);
                 }
             } else if (signal.contains("coordinates")) {
-                String temp=signal.split(":")[1];
-                String[] temp2 =temp.split(",");
-                int x=Integer.parseInt(temp2[0]);
-                int y=Integer.parseInt(temp2[1]);
-                HInterface.squareClicked(x,y);
+                if(HInterface.ready(id)){
+                    String temp=signal.split(":")[1];
+                    String[] temp2 =temp.split(",");
+                    int x=Integer.parseInt(temp2[0]);
+                    int y=Integer.parseInt(temp2[1]);
+                    HInterface.squareClicked(x,y);
+                }
             } else if(signal.contains("perform engine move")){
-                HInterface.getCPUMove();
+                if(HInterface.ready(id)){
+                    HInterface.getCPUMove();
+                }
             } else if (signal.contains("reset")) {
                 if(signal.contains(";")){
                     String[] data=signal.split(";");
@@ -56,6 +60,7 @@ public class Main { //main for the project, work in progress; play not finish.
                     }
                 }
                 HInterface=setupBoard(isCpuOpponent, playerIsWhite);
+                System.out.println("signal: " +HInterface.ready(id));
                 System.out.println("reset complete@"+id);
             } else if (signal.contains("kill")){
                 System.out.println("program terminated@"+id);
