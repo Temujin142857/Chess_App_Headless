@@ -8,7 +8,7 @@ public class HeadlessInterface {
 
     private boolean white_active;
     private boolean isPieceHeld;
-    private int[] pieceHeld;//pretty sure this is a coordinate of the form {x,y} with x and y being ints between 0 and 7 inclusively
+    private int[] pieceHeld;//this is a coordinate of the form {x,y} with x and y being ints between 0 and 7 inclusively
     private Player Wplayer;
     private Player Bplayer;
     private Board board;
@@ -64,7 +64,7 @@ public class HeadlessInterface {
 
 
     public void squareClicked(int x, int y){
-        if (!isPieceHeld){isPieceHeld=true;pieceHeld=new int[]{x,y};highlightSquare();}
+        if (!isPieceHeld){isPieceHeld=true;pieceHeld=new int[]{x,y};highlightSquare();}        
         else if (white_active){
             isPieceHeld = false;
             printMessage("Piece deselected");
@@ -94,16 +94,15 @@ public class HeadlessInterface {
     private boolean white_move(int x, int y){
         int moveResult = Wplayer.move(board, pieceHeld,new int[]{x,y});
         if(moveResult>0){//move is legal
-            isPieceHeld=false;white_active=false;
-            sendMove();
-            if (board.isCheckmate(board.findKing('B'))){
-                for (int i=0;i<8;i++) {
-                    for (int j = 0; j < 8; j++) {
-                        printMessage("at: "+i+","+j+"there is: "+board.at(i,j).getName());
-                    }
-                }
-                isCheckmate=true;
-                endGame("White");
+            isPieceHeld=false;       
+            if(moveResult==4){
+                //promotion case
+                promotionSquare=new int[] {x,y};
+                printMessage("White to promote");
+            } else {
+                white_active=false;
+                sendMove();    
+                checkForCheckmate('W');
             }
 
         }
@@ -111,29 +110,64 @@ public class HeadlessInterface {
             printMessage("illegal move, move was "+pieceHeld[0]+","+pieceHeld[1]+" to "+x+","+y);
             return false;
         }
+        
         return true;
     }
 
     private boolean black_move(int x, int y){
         int moveResult = Bplayer.move(board, pieceHeld,new int[]{x,y});
         if(moveResult>0){//move is legal
-            isPieceHeld=false;white_active=true;
-            sendMove();
-            if (board.isCheckmate(board.findKing('W'))){
-                for (int i=0;i<8;i++) {
-                    for (int j = 0; j < 8; j++) {
-                        printMessage("at: "+i+","+j+"there is: "+board.at(i,j).getName());
-                    }
-                }
-                isCheckmate=true;
-                endGame("Black");
+            isPieceHeld=false;                      
+            if(moveResult==4){
+                //promotion case
+                promotionSquare=new int[] {x,y};
+                printMessage("Black to promote");
+            } else{
+                white_active=true;
+                sendMove();  
+                checkForCheckmate('B');
+                
             }
         }
         else{
             printMessage("illegal move, move was "+pieceHeld[0]+","+pieceHeld[1]+" to "+x+","+y);
             return false;
-        }
+        }        
         return true;
+    }
+
+    public boolean promoteTo(String name){
+        try {            
+            board.promote(promotionSquare, name);
+            if(white_active){
+                white_active=false;
+                checkForCheckmate('W');
+            } else{
+                white_active=true;
+                checkForCheckmate('B');
+            }
+            sendMove();
+            return true;
+        } catch (Exception e) {
+            printMessage("Error:"+e);
+            return false;
+        }
+    }
+
+
+    private void checkForCheckmate(char colour){
+        String fullColour;
+        if(colour=='W')fullColour="White";
+        else fullColour="Black";
+        if (board.isCheckmate(board.findKing(colour))){
+            for (int i=0;i<8;i++) {
+                for (int j = 0; j < 8; j++) {
+                    printMessage("at: "+i+","+j+"there is: "+board.at(i,j).getName());
+                }
+            }
+            isCheckmate=true;
+            endGame(fullColour);
+        }
     }
 
     private void sendMove(){
@@ -166,6 +200,7 @@ public class HeadlessInterface {
     private void printMessage(String message){
         System.out.println(message+"@"+id);
     }
+
 
 
     private void activatePromotion(){

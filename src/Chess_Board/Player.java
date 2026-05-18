@@ -2,8 +2,6 @@ package Chess_Board;
 
 import Chess_Board.Chess_Set.Board;
 
-import java.io.IOException;
-
 
 public class Player {
      //sets the basics attributes of a player like color, and handles all actions made by a player
@@ -34,7 +32,7 @@ public class Player {
     }
 
     public void getPromotionPiece(int[] location,Board board){
-
+      
     }
 
     /**
@@ -74,5 +72,6 @@ public class Player {
     public char getColour() {
         return colour;
     }
+    
 
 }

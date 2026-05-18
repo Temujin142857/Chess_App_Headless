@@ -3,7 +3,6 @@ package Chess_Board.Chess_Set;
 import Chess_Board.Chess_Set.Pieces_Classes.EMPTY;
 import Chess_Board.Chess_Set.Pieces_Classes.Piece;
 import Chess_Board.Player;
-
 import java.util.Iterator;
 
 public class Board { //represents the game board
@@ -114,10 +113,12 @@ public class Board { //represents the game board
             }
             if(location2[1]==7&&at(location2).getName().equals("WPawn")){
                     player.getPromotionPiece(location2,this);
+                    return 4;
             }
 
             else if(location2[1]==0&&at(location2).getName().equals("BPawn")){
                     player.getPromotionPiece(location2,this);
+                    return 4;
             }
 
             if (castling){return 2;}
