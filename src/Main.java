@@ -48,7 +48,7 @@ public class Main { //main for the project, work in progress; play not finish.
                 if(HInterface.ready(id)){
                     HInterface.getCPUMove();
                 }
-            } else if (signal.contains("promote")) {
+            } else if (signal.contains("selectedPromotionPiece")) {
                 String piece=signal.split(":")[1];
                 HInterface.promoteTo(piece);                
             }else if (signal.contains("reset")) {
